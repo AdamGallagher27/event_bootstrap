@@ -1,5 +1,34 @@
 
+// primary colours
+$primary: #7C79ED;
+$light: #F5F5F5;
 
+
+@import "../node_modules/bootstrap/scss/functions";
+@import "../node_modules/bootstrap/scss/variables";
+@import "../node_modules/bootstrap/scss/mixins";
+
+// custom colour
+$custom-colors: (   
+    "text-col": rgb(26, 26, 26),
+    "title-col": rgb(1, 7, 68),
+);
+
+// merge custom colours
+$theme-colors: map-merge($theme-colors, $custom-colors);
+
+
+$spacer: 1rem;
+$spacers: (
+  0: 0,
+  1: $spacer * .25,
+  2: $spacer * .5,
+  3: $spacer,
+  4: $spacer * 1.5,
+  5: $spacer * 3,
+  // custom space for margin top of titles   
+  head-room: $spacer * 4.5,
+);
 
 
 // import bootstrap
