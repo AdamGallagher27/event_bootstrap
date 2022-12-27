@@ -1,4 +1,10 @@
 
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    font-family: 'Poppins', sans-serif;
+}
+
 // primary colours
 $primary: #7C79ED;
 $light: #F5F5F5;
@@ -29,6 +35,29 @@ $spacers: (
   // custom space for margin top of titles   
   head-room: $spacer * 4.5,
 );
+
+
+// custom display sizes for titles
+$display-font-sizes: (
+  1: 2.8rem,
+  2: 2rem,
+  3: 4rem,
+  4: 3.5rem,
+  5: 3rem,
+  6: 2.5rem
+);
+
+$display-font-family: null;
+$display-font-style:  null;
+$display-font-weight: 300;
+$display-line-height: $headings-line-height;
+
+
+// css style for container img background
+.banner-img {
+    background-image: url("../images/header_party.jpg");
+    height: auto;
+}
 
 
 // import bootstrap
