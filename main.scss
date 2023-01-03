@@ -72,10 +72,12 @@ $display-line-height: $headings-line-height;
 	overflow: hidden;
 }
 
+// class for profile box height
 .prof-box {
     height: 35rem;
 }
 
+// class used for keeping button at the bottom of profile box div
 .stay-bottom {
 	position: absolute;
 	bottom: 0;
@@ -83,10 +85,21 @@ $display-line-height: $headings-line-height;
 	width: 90%;
 }
 
+// class for making google maps responsive
 .event-map {
     width: 100%;
 }
 
+// classes for my genre images animations
+.genre-hov {
+	transition-duration: 300ms;
+	transition-property: transform;
+	transition-timing-function: ease-in-out;  
+}
+
+.genre-hov:hover {
+	transform: scale(1.05);
+}
 
 // import bootstrap
 @import "node_modules/bootstrap/scss/bootstrap";

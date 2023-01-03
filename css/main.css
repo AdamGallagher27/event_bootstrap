@@ -30,6 +30,16 @@
   width: 100%;
 }
 
+.genre-hov {
+  transition-duration: 300ms;
+  transition-property: transform;
+  transition-timing-function: ease-in-out;
+}
+
+.genre-hov:hover {
+  transform: scale(1.05);
+}
+
 /*!
  * Bootstrap  v5.2.3 (https://getbootstrap.com/)
  * Copyright 2011-2022 The Bootstrap Authors
